@@ -6,6 +6,11 @@
     <title>Unity WebGL Player | runner3</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+    <script>
+  // Отправляет событие инициализации нативному клиенту
+  vkBridge.send('VKWebAppInit');
+</script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
